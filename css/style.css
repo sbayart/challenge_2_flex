@@ -57,13 +57,6 @@ nav ul {
 ul, li {
     margin: 0;
 }
-/*nav li {
-    padding: 2em;
-}*/
-/*nav li ul li {
-    display: block;
-    position: relative;
-}*/
 nav ul ul {
   display: none;
   position: relative;

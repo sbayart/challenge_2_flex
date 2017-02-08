@@ -37,6 +37,7 @@ nav ul li {
     list-style:none;
     background-color: #fafafa;
     padding: 20px 0;
+    flex: 1;
 }
 h3 {
     text-align: center;
@@ -58,14 +59,18 @@ nav ul {
 ul, li {
     margin: 0;
 }
-
 nav ul ul {
-
+    display: none;
+    position: absolute;
+    /*padding-left: 0;*/
+    width: 9%;
 }
 nav li:hover ul {
-
+    display: flex;
+    flex-direction: column;
 }
-li li:hover ul {
+ul ul li {
+    padding: 1em;
 }
 a {
     text-decoration: none;
@@ -74,7 +79,6 @@ a {
 nav {
     background-color: #fafafa;
     width: 100%;
-
 }
 main {
     margin-top: 25px;
@@ -84,6 +88,7 @@ main img {
     width: 100%;
 }
 h5 {
+    width: 100%;
     font-size: 12px;
     text-align: center;
     padding: 30px 0px;
@@ -101,7 +106,18 @@ footer {
     padding-top: 40px;
     width: 100%;
 }
+footer div {
+    display: flex;
+    justify-content: space-between;;
+}
+footer ul li:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
 div ul {
     list-style: none;
     padding-left: 0px;
+    flex:1;
+    padding-right: 1em;
 }
